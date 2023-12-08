@@ -31,5 +31,41 @@ body {
 .content {
     grid-column: 2 / 3;
     height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid red;
+}
+
+.article-area {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid red;
+}
+
+.article {
+    border: 1px solid red;
+}
+
+.content-sidebar {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: 1px solid red;
+}
+
+.trending {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
     border: 1px solid red;
 }
