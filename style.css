@@ -12,9 +12,35 @@ body {
 .header {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 15vh;
+    border: 1px solid red;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 500px;
+    border: 1px solid red;
+}
+
+.notifications {
+    border: 1px solid red;
+}
+
+.profile {
+    border: 1px solid red;
+}
+
+.big-profile {
+    border: 1px solid red;
+}
+
+.buttons {
+    grid-column: 3 / 4;
     border: 1px solid red;
 }
 
@@ -25,7 +51,10 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
     border: 1px solid red;
+}
 
+.sidebar li {
+    list-style: none;
 }
 
 .content {
