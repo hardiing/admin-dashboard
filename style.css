@@ -16,6 +16,7 @@ body {
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     height: 15vh;
+    margin: 25px;
     border: 1px solid red;
 }
 
@@ -23,6 +24,7 @@ input[type=text] {
     padding: 6px;
     margin-top: 8px;
     margin-right: 16px;
+    margin-left: 16px;
     font-size: 17px;
     width: 500px;
     border-radius: 25px;
@@ -31,7 +33,7 @@ input[type=text] {
 
 .notifications {
     margin: auto;
-    padding: auto;
+    /* padding: auto; */
     border: 1px solid red;
 }
 
@@ -58,6 +60,7 @@ input[type=text] {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
+    font-size: 24px;
     /* background-color: blue; */
     border: 1px solid red;
 }
@@ -76,6 +79,7 @@ input[type=text] {
     margin: 25px;
     border: 1px solid red;
 }
+
 
 .article-area {
     grid-column: 1 / 3;
