@@ -64,7 +64,13 @@ input[type=text] {
     grid-template-rows: repeat(12, 1fr);
     font-size: 24px;
     background-color: #ef4444;
+    align-items: center;
     border: 1px solid red;
+}
+
+img {
+    height: 30px;
+    width: 30px;
 }
 
 .sidebar ul {
@@ -72,18 +78,32 @@ input[type=text] {
     padding: 0;
 }
 
+.sidebar li {
+    padding-top: 15px;
+}
+
 .sidebar li a {
     list-style: none;
     text-decoration: none;
     color: white;
+    vertical-align: middle;
 }
 
-.sidebar svg {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    /* align-items: center;
-    flex-direction: row; */
+.sidebar li a:hover {
+    color: black;
+}
+
+.sidebar img {
+    display: inline-block;
+    padding-right: 15px;
+    vertical-align: middle;
+    ;
+}
+
+.dash {
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
 }
 
 .content {
