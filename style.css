@@ -68,7 +68,7 @@ input[type=text] {
     font-size: 24px;
     background-color: #ef4444;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 img {
@@ -110,19 +110,28 @@ img {
 
 .content {
     grid-column: 2 / 3;
-    height: 85vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-rows: .03fr 1fr 1fr 1fr;
     gap: 25px;
     margin: 25px;
     /* border: 1px solid red; */
 }
 
+.head {
+    grid-row: 1 / 2;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    height: 24px;
+}
+
 
 .article-area {
     grid-column: 1 / 3;
-    grid-row: 1 / 4;
+    grid-row: 2 / 5;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -139,6 +148,7 @@ img {
     background-color: #94a3b8;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px black;
     /* border: 1px solid red; */
 }
 
@@ -178,23 +188,82 @@ img {
     height: 20%;
 }
 
+.article-buttons button {
+    border: none;
+    background-color: #94a3b8;
+}
+
+.article-buttons button:hover {
+    background-color: #fca5a5;
+}
+
 .content-sidebar {
     grid-column: 3 / 4;
     grid-row: 1 / 4;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .03fr 1fr .03fr 1fr; */
     gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sidebar-head {
+    /* grid-row: 1 / 2; */
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    height: 18px;
 }
 
 .announcements {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    border: 1px solid red;
+    /* grid-column: 1 / 2;
+    grid-row: 2 / 3; */
+    background-color: #94a3b8;
+    border-radius: 15px;
+    box-shadow: 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.announcements h3 {
+    margin: 0;
+    padding-top: 15px;
+}
+
+.announcements p {
+    margin: 0;
+}
+
+.announcements-preview {
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    padding: 5px 15px 5px 15px;
+}
+
+.announcements-preview:last-child {
+    border: none;
+}
+
+.trending-head {
+    grid-row: 3 / 4;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    height: 18px;
 }
 
 .trending {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: #94a3b8;
+    border-radius: 15px;
+    box-shadow: 5px black;
+    height: 40vh;
     border: 1px solid red;
 }
