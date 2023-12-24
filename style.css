@@ -49,12 +49,17 @@ input[type=text] {
 }
 
 .notifications {
-    margin: auto;
-    border: 1px solid red;
+    margin-top: 10px;
+    padding-left: 35px;
 }
 
-.notifactions button {
+.notifications button {
     border-radius: 25px;
+    border: none;
+}
+
+.notifications button:hover {
+    background-color: #fca5a5;
 }
 
 .profile {
