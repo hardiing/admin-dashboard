@@ -29,16 +29,27 @@ input[type=text] {
     padding: 6px;
     margin-top: 8px;
     margin-right: 16px;
-    margin-left: 16px;
+    /* margin-left: 8px; */
     font-size: 17px;
     width: 500px;
+    height: 25px;
     border-radius: 25px;
     border: 1px solid red;
 }
 
+.search-bar {
+    display: flex;
+}
+
+.magnify {
+    vertical-align: center;
+    height: 25px;
+    width: 25px;
+    padding: 16px;
+}
+
 .notifications {
     margin: auto;
-    /* padding: auto; */
     border: 1px solid red;
 }
 
@@ -51,7 +62,30 @@ input[type=text] {
 }
 
 .big-profile {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.big-profile-pic {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.big-profile-text {
+    grid-column: 2 / 3;
+    padding: 0;
+    display: inline-block;
+    padding-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.big-profile-text h2 {
+    padding-left: 55px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .buttons {
@@ -265,5 +299,30 @@ img {
     border-radius: 15px;
     box-shadow: 5px black;
     height: 40vh;
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 10px;
+    gap: 0px;
+    /* border: 1px solid red; */
+}
+
+.trending-profiles {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column: 1 / 2;
+}
+
+.trending-profiles img {
+    height: 100px;
+    width: 100px;
+}
+
+.trending-names {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column: 2 / 3;
 }
