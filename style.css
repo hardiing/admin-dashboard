@@ -22,19 +22,17 @@ body {
     height: 15vh;
     margin: 25px;
     background-color: #e2e8f0;
-    border: 1px solid red;
+    box-shadow: 0px 5px 5px black;
 }
 
 input[type=text] {
     padding: 6px;
     margin-top: 8px;
     margin-right: 16px;
-    /* margin-left: 8px; */
     font-size: 17px;
     width: 500px;
     height: 25px;
     border-radius: 25px;
-    border: 1px solid red;
 }
 
 .search-bar {
@@ -63,7 +61,20 @@ input[type=text] {
 }
 
 .profile {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.profile p {
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+.small-profile-pic {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .big-profile {
@@ -95,7 +106,20 @@ input[type=text] {
 
 .buttons {
     grid-column: 3 / 4;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons button {
+    margin: 15px 15px 15px 15px;
+    border-radius: 10px;
+    background-color: #fca5a5;
+    box-shadow: 10px black;
+    width: 100px;
+}
+
+.buttons button:hover {
+    background-color: #94a3b8;
 }
 
 .sidebar {
@@ -107,7 +131,6 @@ input[type=text] {
     font-size: 24px;
     background-color: #ef4444;
     align-items: center;
-    /* border: 1px solid red; */
 }
 
 img {
@@ -152,11 +175,9 @@ img {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: repeat(4, 1fr); */
     grid-template-rows: .03fr 1fr 1fr 1fr;
     gap: 25px;
     margin: 25px;
-    /* border: 1px solid red; */
 }
 
 .head {
@@ -175,7 +196,6 @@ img {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
-    /* border: 1px solid red; */
 }
 
 .article {
@@ -188,7 +208,6 @@ img {
     display: flex;
     flex-direction: column;
     box-shadow: 5px black;
-    /* border: 1px solid red; */
 }
 
 .article button {
@@ -239,9 +258,6 @@ img {
 .content-sidebar {
     grid-column: 3 / 4;
     grid-row: 1 / 4;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .03fr 1fr .03fr 1fr; */
     gap: 25px;
     display: flex;
     flex-direction: column;
@@ -250,7 +266,6 @@ img {
 }
 
 .sidebar-head {
-    /* grid-row: 1 / 2; */
     margin: 0;
     font-size: 18px;
     font-weight: bold;
@@ -258,8 +273,6 @@ img {
 }
 
 .announcements {
-    /* grid-column: 1 / 2;
-    grid-row: 2 / 3; */
     background-color: #94a3b8;
     border-radius: 15px;
     box-shadow: 5px black;
@@ -309,7 +322,6 @@ img {
     grid-template-rows: repeat(4, 1fr);
     padding: 10px;
     gap: 0px;
-    /* border: 1px solid red; */
 }
 
 .trending-profiles {
